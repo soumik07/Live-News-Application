@@ -36,6 +36,7 @@ const NavBar = ({setSelectedCategory, setSelectedCountry}) => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <div></div>
     </div>
   )
 }
