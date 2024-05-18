@@ -6,7 +6,13 @@ export const NewsBoard = ({selectedCategory, selectedCountry}) => {
     const[articles, setArticles] = useState([]);
     useEffect(()=>{
         let url = `https://newsapi.org/v2/top-headlines?country=${selectedCountry}&category=${selectedCategory}&apiKey=14a898e78983400f9e1070855571ddbb`
-        fetch(url).then(response=>response.json()).then(data=>{
+        fetch(url,{
+            method: 'GET',
+            headers: {
+              'Upgrade': 'h2c',
+              'Connection': 'Upgrade'
+            }
+          }).then(response=>response.json()).then(data=>{
             setArticles(data.articles)
             
         })
