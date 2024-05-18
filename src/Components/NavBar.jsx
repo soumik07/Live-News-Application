@@ -26,7 +26,7 @@ const NavBar = ({setSelectedCategory, setSelectedCountry}) => {
 
             <Nav.Link onClick={()=>setSelectedCategory("general")}>General</Nav.Link>
             <Nav.Link onClick={()=>setSelectedCategory("entertainment")}>Entertainment</Nav.Link>
-            <Nav.Link onClick={()=>setSelectedCategory("science")}>Science</Nav.Link>dvfgrthrtb
+            <Nav.Link onClick={()=>setSelectedCategory("science")}>Science</Nav.Link>
             <Nav.Link onClick={()=>setSelectedCategory("sports")}>Sports</Nav.Link>
             <Nav.Link onClick={()=>setSelectedCategory("technology")}>Technology</Nav.Link>
             <Nav.Link onClick={()=>setSelectedCategory("technology")}>Technology</Nav.Link>
