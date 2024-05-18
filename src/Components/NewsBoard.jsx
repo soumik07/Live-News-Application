@@ -7,7 +7,7 @@ export const NewsBoard = ({selectedCategory, selectedCountry}) => {
     useEffect(()=>{
         let url = `https://newsapi.org/v2/top-headlines?country=${selectedCountry}&category=${selectedCategory}&apiKey=14a898e78983400f9e1070855571ddbb`
         fetch(url,{
-            method: 'GET',
+            
             headers: {
               'Upgrade': 'h2c',
               'Connection': 'Upgrade'
